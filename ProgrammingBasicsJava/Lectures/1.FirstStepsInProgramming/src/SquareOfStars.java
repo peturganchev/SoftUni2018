@@ -2,25 +2,22 @@ import java.util.Scanner;
 
 public class SquareOfStars {
     public static void main(String[] args) {
-        String star = "";
         Scanner console = new Scanner(System.in);
         int n = Integer.parseInt(console.nextLine());
+        String line = "";
+        String row = "";
         for (int i = 0; i < n; i++) {
-            star += "*";
+            line += "*";
         }
-        System.out.println(star);
-        star = "*";
+        System.out.println(line);
+        row = "*";
         for (int i = 0; i < n-2; i++) {
-            star += " ";
+            row += " ";
         }
-        star += "*";
+        row += "*";
         for (int i = 0; i < n-2; i++) {
-            System.out.println(star);
+            System.out.println(row);
         }
-        star = "";
-        for (int i = 0; i < n; i++) {
-            star += "*";
-        }
-        System.out.println(star);
+        System.out.println(line);
     }
 }
