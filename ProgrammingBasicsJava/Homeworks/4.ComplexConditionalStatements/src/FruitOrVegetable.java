@@ -5,7 +5,7 @@ public class FruitOrVegetable {
         Scanner scanner = new Scanner(System.in);
         String plant = scanner.nextLine();
         switch (plant){
-            case "banana":
+            case "banana": // We use empty cases because we want all fruits to have the same print out to the console
             case "apple":
             case "kiwi":
             case "cherry":
@@ -13,14 +13,14 @@ public class FruitOrVegetable {
             case "grapes":
                 System.out.println("fruit");
                 break;
-            case "tomato":
+            case "tomato": // Same as the fruits we want all vegetables to print "vegetable" in the console
             case "cucumber":
             case "pepper":
             case "carrot":
                 System.out.println("vegetable");
                 break;
                 default:
-                    System.out.println("unknown");
+                    System.out.println("unknown"); // If not a fruit, nor a vegetable print unknown
                     break;
         }
     }
