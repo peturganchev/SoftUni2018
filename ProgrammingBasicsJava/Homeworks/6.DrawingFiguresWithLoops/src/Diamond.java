@@ -5,7 +5,7 @@ public class Diamond {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
         int OuterSpace; // used for calculating how many - there are outside of the diamond
-        
+
         if (n % 2 == 0){ // for even numbers
             for (int i = 0; i < n/2; i++) { // making the upper part
                 OuterSpace = ((n-2)-2*i)/2;
